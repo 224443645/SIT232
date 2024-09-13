@@ -1,0 +1,14 @@
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/Overloading.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/Overloading.AssemblyInfoInputs.cache
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/Overloading.AssemblyInfo.cs
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/Overloading.csproj.CoreCompileInputs.cache
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/bin/Debug/net8.0/Overloading
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/bin/Debug/net8.0/Overloading.deps.json
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/bin/Debug/net8.0/Overloading.runtimeconfig.json
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/bin/Debug/net8.0/Overloading.dll
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/bin/Debug/net8.0/Overloading.pdb
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/Overloading.dll
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/refint/Overloading.dll
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/Overloading.pdb
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/Overloading.genruntimeconfig.cache
+/home/user/Documents/Projects/SIT232_5.1p/Overloading/obj/Debug/net8.0/ref/Overloading.dll

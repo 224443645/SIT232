@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "pCyQFLNyIv4=",
+  "success": true,
+  "projectFilePath": "/home/user/Documents/Projects/SIT232_1.2p/Repitition/Repitition.csproj",
+  "expectedPackageFiles": [
+    "/home/user/.nuget/packages/microsoft.netcore.app.ref/8.0.7/microsoft.netcore.app.ref.8.0.7.nupkg.sha512",
+    "/home/user/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.7/microsoft.aspnetcore.app.ref.8.0.7.nupkg.sha512",
+    "/home/user/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.7/microsoft.netcore.app.host.linux-x64.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

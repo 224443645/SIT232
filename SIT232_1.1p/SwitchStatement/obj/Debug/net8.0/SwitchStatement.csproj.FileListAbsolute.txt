@@ -1,0 +1,14 @@
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/bin/Debug/net8.0/SwitchStatement
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/bin/Debug/net8.0/SwitchStatement.deps.json
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/bin/Debug/net8.0/SwitchStatement.runtimeconfig.json
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/bin/Debug/net8.0/SwitchStatement.dll
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/bin/Debug/net8.0/SwitchStatement.pdb
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/SwitchStatement.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/SwitchStatement.AssemblyInfoInputs.cache
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/SwitchStatement.AssemblyInfo.cs
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/SwitchStatement.csproj.CoreCompileInputs.cache
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/SwitchStatement.dll
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/refint/SwitchStatement.dll
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/SwitchStatement.pdb
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/SwitchStatement.genruntimeconfig.cache
+/home/user/Documents/Projects/SIT232_1.1p/SwitchStatement/obj/Debug/net8.0/ref/SwitchStatement.dll

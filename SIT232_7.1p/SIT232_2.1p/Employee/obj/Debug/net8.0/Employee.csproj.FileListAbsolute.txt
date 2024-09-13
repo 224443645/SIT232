@@ -1,0 +1,14 @@
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/Employee.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/Employee.AssemblyInfoInputs.cache
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/Employee.AssemblyInfo.cs
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/Employee.csproj.CoreCompileInputs.cache
+/home/user/Documents/Projects/SIT232_2.1p/Employee/bin/Debug/net8.0/Employee
+/home/user/Documents/Projects/SIT232_2.1p/Employee/bin/Debug/net8.0/Employee.deps.json
+/home/user/Documents/Projects/SIT232_2.1p/Employee/bin/Debug/net8.0/Employee.runtimeconfig.json
+/home/user/Documents/Projects/SIT232_2.1p/Employee/bin/Debug/net8.0/Employee.dll
+/home/user/Documents/Projects/SIT232_2.1p/Employee/bin/Debug/net8.0/Employee.pdb
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/Employee.dll
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/refint/Employee.dll
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/Employee.pdb
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/Employee.genruntimeconfig.cache
+/home/user/Documents/Projects/SIT232_2.1p/Employee/obj/Debug/net8.0/ref/Employee.dll

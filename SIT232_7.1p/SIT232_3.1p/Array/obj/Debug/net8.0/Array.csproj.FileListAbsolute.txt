@@ -1,0 +1,14 @@
+/home/user/Documents/Projects/SIT232_3.1p/Array/bin/Debug/net8.0/Array
+/home/user/Documents/Projects/SIT232_3.1p/Array/bin/Debug/net8.0/Array.deps.json
+/home/user/Documents/Projects/SIT232_3.1p/Array/bin/Debug/net8.0/Array.runtimeconfig.json
+/home/user/Documents/Projects/SIT232_3.1p/Array/bin/Debug/net8.0/Array.dll
+/home/user/Documents/Projects/SIT232_3.1p/Array/bin/Debug/net8.0/Array.pdb
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/Array.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/Array.AssemblyInfoInputs.cache
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/Array.AssemblyInfo.cs
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/Array.csproj.CoreCompileInputs.cache
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/Array.dll
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/refint/Array.dll
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/Array.pdb
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/Array.genruntimeconfig.cache
+/home/user/Documents/Projects/SIT232_3.1p/Array/obj/Debug/net8.0/ref/Array.dll

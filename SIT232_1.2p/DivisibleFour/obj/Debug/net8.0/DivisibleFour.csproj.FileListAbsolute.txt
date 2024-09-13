@@ -1,0 +1,14 @@
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/bin/Debug/net8.0/DivisibleFour
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/bin/Debug/net8.0/DivisibleFour.deps.json
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/bin/Debug/net8.0/DivisibleFour.runtimeconfig.json
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/bin/Debug/net8.0/DivisibleFour.dll
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/bin/Debug/net8.0/DivisibleFour.pdb
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/DivisibleFour.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/DivisibleFour.AssemblyInfoInputs.cache
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/DivisibleFour.AssemblyInfo.cs
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/DivisibleFour.csproj.CoreCompileInputs.cache
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/DivisibleFour.dll
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/refint/DivisibleFour.dll
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/DivisibleFour.pdb
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/DivisibleFour.genruntimeconfig.cache
+/home/user/Documents/Projects/SIT232_1.2p/DivisibleFour/obj/Debug/net8.0/ref/DivisibleFour.dll

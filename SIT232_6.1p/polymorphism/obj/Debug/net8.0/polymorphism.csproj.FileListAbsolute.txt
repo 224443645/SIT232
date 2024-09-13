@@ -1,0 +1,14 @@
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/bin/Debug/net8.0/polymorphism
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/bin/Debug/net8.0/polymorphism.deps.json
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/bin/Debug/net8.0/polymorphism.runtimeconfig.json
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/bin/Debug/net8.0/polymorphism.dll
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/bin/Debug/net8.0/polymorphism.pdb
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/polymorphism.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/polymorphism.AssemblyInfoInputs.cache
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/polymorphism.AssemblyInfo.cs
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/polymorphism.csproj.CoreCompileInputs.cache
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/polymorphism.dll
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/refint/polymorphism.dll
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/polymorphism.pdb
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/polymorphism.genruntimeconfig.cache
+/home/user/Documents/Projects/SIT232_6.1p/polymorphism/obj/Debug/net8.0/ref/polymorphism.dll

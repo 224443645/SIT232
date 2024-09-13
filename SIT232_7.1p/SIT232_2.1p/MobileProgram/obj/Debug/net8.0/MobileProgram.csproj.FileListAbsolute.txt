@@ -1,0 +1,14 @@
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/bin/Debug/net8.0/MobileProgram
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/bin/Debug/net8.0/MobileProgram.deps.json
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/bin/Debug/net8.0/MobileProgram.runtimeconfig.json
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/bin/Debug/net8.0/MobileProgram.dll
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/bin/Debug/net8.0/MobileProgram.pdb
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/MobileProgram.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/MobileProgram.AssemblyInfoInputs.cache
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/MobileProgram.AssemblyInfo.cs
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/MobileProgram.csproj.CoreCompileInputs.cache
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/MobileProgram.dll
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/refint/MobileProgram.dll
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/MobileProgram.pdb
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/MobileProgram.genruntimeconfig.cache
+/home/user/Documents/Projects/SIT232_2.1p/MobileProgram/obj/Debug/net8.0/ref/MobileProgram.dll
