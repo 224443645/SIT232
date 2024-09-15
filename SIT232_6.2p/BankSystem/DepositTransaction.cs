@@ -16,11 +16,18 @@ class DepositTransaction
         _amount = amount;
     }
 
+    /// <summary>
+    /// prints transaction details
+    /// </summary>
     public void Print()
     {
         Console.WriteLine("The transaction was a " + (_success ? $"sucess. ${_amount}(s) were deposited." : "failure"));
     }
 
+    /// <summary>
+    /// Executes transaction
+    /// </summary>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Execute()
     {
         if (_executed)
@@ -39,6 +46,11 @@ class DepositTransaction
         _success = true;
     }
 
+    /// <summary>
+    /// Rollsback transaction, can only be called if the transaction has already been executed.
+    /// cannot be called twice
+    /// </summary>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Rollback()
     {
         if (!_executed)

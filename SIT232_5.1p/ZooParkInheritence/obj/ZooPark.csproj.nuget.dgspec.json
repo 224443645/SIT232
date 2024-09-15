@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/user/Documents/Projects/SIT232_5.1p/ZooParkInheritence/ZooPark.csproj": {}
+    "C:\\Users\\samma\\OneDrive - Deakin University\\Documents - Deakin\\SIT 232\\Git Versioned\\SIT232\\SIT232_5.1p\\ZooParkInheritence\\ZooPark.csproj": {}
   },
   "projects": {
-    "/home/user/Documents/Projects/SIT232_5.1p/ZooParkInheritence/ZooPark.csproj": {
+    "C:\\Users\\samma\\OneDrive - Deakin University\\Documents - Deakin\\SIT 232\\Git Versioned\\SIT232\\SIT232_5.1p\\ZooParkInheritence\\ZooPark.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/Documents/Projects/SIT232_5.1p/ZooParkInheritence/ZooPark.csproj",
+        "projectUniqueName": "C:\\Users\\samma\\OneDrive - Deakin University\\Documents - Deakin\\SIT 232\\Git Versioned\\SIT232\\SIT232_5.1p\\ZooParkInheritence\\ZooPark.csproj",
         "projectName": "ZooPark",
-        "projectPath": "/home/user/Documents/Projects/SIT232_5.1p/ZooParkInheritence/ZooPark.csproj",
-        "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/Documents/Projects/SIT232_5.1p/ZooParkInheritence/obj/",
+        "projectPath": "C:\\Users\\samma\\OneDrive - Deakin University\\Documents - Deakin\\SIT 232\\Git Versioned\\SIT232\\SIT232_5.1p\\ZooParkInheritence\\ZooPark.csproj",
+        "packagesPath": "C:\\Users\\samma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\samma\\OneDrive - Deakin University\\Documents - Deakin\\SIT 232\\Git Versioned\\SIT232\\SIT232_5.1p\\ZooParkInheritence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/user/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\samma\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,26 +53,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.7, 8.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.7, 8.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.7, 8.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -26,7 +26,7 @@ namespace Zoo
         public void sleep()
         {
             Console.WriteLine("Sleeps");
-         }
+        }
         public virtual void makeNoise()
         {
             Console.WriteLine("An animal makes a noise");

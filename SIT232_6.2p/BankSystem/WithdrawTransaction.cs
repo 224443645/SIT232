@@ -15,12 +15,17 @@ class WithdrawTransaction
         _account = account;
         _amount = amount;
     }
-
+    /// <summary>
+    /// prints transaction details
+    /// </summary>
     public void Print()
     {
         Console.WriteLine("The transaction was a " + (_success ? $"sucess. ${_amount}(s) were withdrawn." : "failure"));
     }
-
+    /// <summary>
+    /// Executes transaction
+    /// </summary>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Execute()
     {
         if (_executed)
@@ -36,7 +41,10 @@ class WithdrawTransaction
 
         _success = true;
     }
-
+    /// <summary>
+    /// Rolls back transaction, cannot be called twice. Can only be called once the transaction has been executed
+    /// </summary>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Rollback()
     {
         if (!_executed)

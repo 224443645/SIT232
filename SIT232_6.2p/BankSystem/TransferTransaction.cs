@@ -20,14 +20,19 @@ class TransferTransaction
         this._deposit = new DepositTransaction(_toAccount, _amount);
         this._withdraw = new WithdrawTransaction(_fromAccount, _amount);
     }
-
+    /// <summary>
+    /// prints transaction details
+    /// </summary>
     public void Print()
     {
         Console.WriteLine($"Transfered ${_amount} from {_fromAccount} to {_toAccount}");
         _withdraw.Print();
         _deposit.Print();
     }
-
+    /// <summary>
+    /// Executes transaction
+    /// </summary>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Execute()
     {
         if (_executed)
@@ -40,7 +45,10 @@ class TransferTransaction
         _deposit.Execute();
 
     }
-
+    /// <summary>
+    /// rollsback transaction, can only be called once transaction has been executed. Cannot be called twice
+    /// </summary>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Rollback()
     {
         if (!_executed)

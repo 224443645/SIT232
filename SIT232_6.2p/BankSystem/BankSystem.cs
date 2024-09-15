@@ -1,4 +1,7 @@
-﻿enum MenuOption
+﻿/// <summary>
+/// Enum of different menu options the user can choose
+/// </summary>
+enum MenuOption
 {
     Withdraw,
     Deposit,
@@ -7,8 +10,15 @@
     AddNewAccount,
     Quit
 }
+/// <summary>
+/// methods and Main method/logic for operating the banksystem
+/// </summary>
 class BankSystem
 {
+    /// <summary>
+    /// Entry point for the program
+    /// </summary>
+    /// <param name="args"></param>
     static void Main(string[] args)
     {
         Bank bank = new Bank();
@@ -22,11 +32,11 @@ class BankSystem
             {
                 case MenuOption.Withdraw:
                     Console.WriteLine("Withdraw selected");
-                    DoWithdraw(SelectAccount(bank));
+                    DoWithdraw(SelectAccount(bank), bank);
                     break;
                 case MenuOption.Deposit:
                     Console.WriteLine("Deposit selected");
-                    DoDeposit(SelectAccount(bank));
+                    DoDeposit(SelectAccount(bank), bank);
                     break;
                 case MenuOption.Print:
                     Console.WriteLine("Print selected");
@@ -34,7 +44,7 @@ class BankSystem
                     break;
                 case MenuOption.Transfer:
                     Console.WriteLine("Transfer Selected\nSelect From Account then To Account");
-                    DoTransfer(SelectAccount(bank), SelectAccount(bank));
+                    DoTransfer(SelectAccount(bank), SelectAccount(bank), bank);
                     break;
                 case MenuOption.AddNewAccount:
                     Console.WriteLine("Add account selected");
@@ -46,7 +56,10 @@ class BankSystem
             }
         }
     }
-
+    /// <summary>
+    /// Reads user option
+    /// </summary>
+    /// <returns>Returns MenuOption</returns>
     static MenuOption ReadUserOption()
     {
         do
@@ -67,7 +80,12 @@ class BankSystem
         } while (true);
     }
 
-    static void DoDeposit(Account account)
+    /// <summary>
+    /// Gets amount the user would like to deposit and executes the transaction 
+    /// </summary>
+    /// <param name="account">The account to deposit to</param>
+    /// <param name="bank">The bank to handle the transaction</param>
+    static void DoDeposit(Account account, Bank bank)
     {
         decimal value = -1;
         do
@@ -93,11 +111,15 @@ class BankSystem
         } while (value < 0);
         DepositTransaction transaction = new DepositTransaction(account, value);
 
-        transaction.Execute();
+        bank.ExecuteTransaction(transaction);
         transaction.Print();
     }
-
-    static void DoWithdraw(Account account)
+    /// <summary>
+    /// Gets amount the user would like to withdraw and executes the transaction
+    /// </summary>
+    /// <param name="account">The account to withdraw from</param>
+    /// <param name="bank">The bank to handle the transaction</param>
+    static void DoWithdraw(Account account, Bank bank)
     {
         decimal value = -1;
         do
@@ -127,16 +149,24 @@ class BankSystem
         } while (value <= 0 || value > account.Balance);
 
         WithdrawTransaction transaction = new WithdrawTransaction(account, value);
-        transaction.Execute();
+        bank.ExecuteTransaction(transaction);
         transaction.Print();
     }
-
+    /// <summary>
+    /// Prints information about the given account
+    /// </summary>
+    /// <param name="account">Account to print information of</param>
     static void DoPrint(Account account)
     {
         account.Print();
     }
-
-    static void DoTransfer(Account fromAccount, Account toAccount)
+    /// <summary>
+    /// Gets the amount the user would like to transfer between accounts and eecutes transaction
+    /// </summary>
+    /// <param name="fromAccount">Account to transfer from</param>
+    /// <param name="toAccount">Account to transfer to</param>
+    /// <param name="bank">Bank to handle the transaction</param>
+    static void DoTransfer(Account fromAccount, Account toAccount, Bank bank)
     {
         decimal value = -1;
         do
@@ -165,9 +195,15 @@ class BankSystem
 
         } while (value <= 0 || value > fromAccount.Balance);
 
-        new TransferTransaction(fromAccount, toAccount, value).Execute();
-    }
+        TransferTransaction transaction = new TransferTransaction(fromAccount, toAccount, value);
+        bank.ExecuteTransaction(transaction);
+        transaction.Print();
 
+    }
+    /// <summary>
+    /// Gets information about new account and adds it to specified bank
+    /// </summary>
+    /// <param name="bank">Bank to add tbe account to</param>
     static void DoAddAccount(Bank bank)
     {
         Console.WriteLine("Enter the name of the new account");
@@ -196,9 +232,20 @@ class BankSystem
                 Console.WriteLine("Input must be a decimal number.");
             }
         } while (value == -1);
-
-        bank.AddAccount(new Account(name, value));
+        try
+        {
+            bank.AddAccount(new Account(name, value));
+        }
+        catch (InvalidOperationException)
+        {
+            Console.WriteLine("Account cannot be added to bank because one with the same name already exists");
+        }
     }
+    /// <summary>
+    /// Helper method for allowing the user to select an account
+    /// </summary>
+    /// <param name="bank">Bank object to select the account from</param>
+    /// <returns>Returns an Account object</returns>
     static Account SelectAccount(Bank bank)
     {
         Account account = null;
