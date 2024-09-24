@@ -1,4 +1,4 @@
-class Penguin : Bird
+class Penguin : Bird 
 {
     public override void fly() {
         Console.WriteLine("Penguins cannot fly");

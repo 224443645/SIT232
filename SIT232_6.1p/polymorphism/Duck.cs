@@ -1,4 +1,4 @@
-class Duck : Bird
+class Duck : Bird 
 {
     public double size { get; set; }
     public String kind { get; set; }

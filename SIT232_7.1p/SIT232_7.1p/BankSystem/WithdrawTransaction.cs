@@ -40,6 +40,9 @@ class WithdrawTransaction : Transaction
         {
             throw new InvalidOperationException("Withdrawl must have occured before rolling back");
         }
+        if (!_success) {
+            throw new InvalidOperationException("Failed Transactions cannot be rolled back");
+        }
         if (_reversed)
         {
             throw new InvalidOperationException("Transaction has already been reversed.");

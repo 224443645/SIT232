@@ -1,4 +1,4 @@
-﻿class Bird
+﻿class Bird 
 {
     public String name { get; set; }
     public Bird()

@@ -3,6 +3,8 @@ class Bank
     private List<Account> _accounts = new List<Account>();
     private List<Transaction> _transactions = new List<Transaction>();
 
+    public int AccountsCount {get => _accounts.Count;}
+
     public void AddAccount(Account account)
     {
         _accounts.Add(account);
@@ -34,7 +36,7 @@ class Bank
 
     public void PrintTransactionHistory()
     {
-        int i = 0;
+        int i = 1;
         foreach (Transaction transaction in _transactions)
         {
             Console.Write(i + ". ");

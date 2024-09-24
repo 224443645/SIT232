@@ -1,4 +1,7 @@
-﻿enum MenuOption
+﻿// added an AccountsCount property to the bank class to enable input validation
+// without having to parse the std output or something silly
+// 
+enum MenuOption
 {
     Withdraw,
     Deposit,
@@ -13,6 +16,7 @@ class BankSystem
     static void Main(string[] args)
     {
         Bank bank = new Bank();
+        // just some testign accounts
         bank.AddAccount(new Account("David", 20000));
         bank.AddAccount(new Account("Charity", 30000));
 
@@ -23,11 +27,11 @@ class BankSystem
             {
                 case MenuOption.Withdraw:
                     Console.WriteLine("Withdraw selected");
-                    DoWithdraw(SelectAccount(bank));
+                    DoWithdraw(SelectAccount(bank), bank);
                     break;
                 case MenuOption.Deposit:
                     Console.WriteLine("Deposit selected");
-                    DoDeposit(SelectAccount(bank));
+                    DoDeposit(SelectAccount(bank), bank);
                     break;
                 case MenuOption.Print:
                     Console.WriteLine("Print selected");
@@ -35,7 +39,7 @@ class BankSystem
                     break;
                 case MenuOption.Transfer:
                     Console.WriteLine("Transfer Selected\nSelect From Account then To Account");
-                    DoTransfer(SelectAccount(bank), SelectAccount(bank));
+                    DoTransfer(SelectAccount(bank), SelectAccount(bank), bank);
                     break;
                 case MenuOption.AddNewAccount:
                     Console.WriteLine("Add account selected");
@@ -72,7 +76,7 @@ class BankSystem
         } while (true);
     }
 
-    static void DoDeposit(Account account)
+    static void DoDeposit(Account account, Bank bank)
     {
         decimal value = -1;
         do
@@ -98,11 +102,11 @@ class BankSystem
         } while (value < 0);
         DepositTransaction transaction = new DepositTransaction(account, value);
 
-        transaction.Execute();
+        bank.ExecuteTransaction(transaction);
         transaction.Print();
     }
 
-    static void DoWithdraw(Account account)
+    static void DoWithdraw(Account account, Bank bank)
     {
         decimal value = -1;
         do
@@ -132,7 +136,8 @@ class BankSystem
         } while (value <= 0 || value > account.Balance);
 
         WithdrawTransaction transaction = new WithdrawTransaction(account, value);
-        transaction.Execute();
+
+        bank.ExecuteTransaction(transaction);
         transaction.Print();
     }
 
@@ -141,7 +146,7 @@ class BankSystem
         account.Print();
     }
 
-    static void DoTransfer(Account fromAccount, Account toAccount)
+    static void DoTransfer(Account fromAccount, Account toAccount, Bank bank)
     {
         decimal value = -1;
         do
@@ -170,7 +175,7 @@ class BankSystem
 
         } while (value <= 0 || value > fromAccount.Balance);
 
-        new TransferTransaction(fromAccount, toAccount, value).Execute();
+        bank.ExecuteTransaction(new TransferTransaction(fromAccount, toAccount, value));
     }
 
     static void DoAddAccount(Bank bank)
@@ -260,9 +265,9 @@ class BankSystem
             {
                 value = Convert.ToInt32(Console.ReadLine());
 
-                if (value <= 0)
+                if (value <= 0 || value > bank.AccountsCount)
                 {
-                    Console.WriteLine("Input must be a valid int greater than 0");
+                    Console.WriteLine($"Input must be a valid int greater than 0 and less than {bank.AccountsCount}");
                     value = -1;
                 }
 
@@ -271,7 +276,7 @@ class BankSystem
             {
                 Console.WriteLine("Input must be a decimal number.");
             }
-            transaction = bank.GetTransaction(value);
+            transaction = bank.GetTransaction(value - 1);
         } while (value <= 0 || transaction == null);
 
         transaction.Rollback();

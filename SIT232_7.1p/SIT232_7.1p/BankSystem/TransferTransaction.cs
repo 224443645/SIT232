@@ -46,6 +46,10 @@ class TransferTransaction : Transaction
         {
             throw new InvalidOperationException("Transaction has not been executed");
         }
+        if (!_success)
+        {
+            throw new InvalidOperationException("Failed Transactions cannot be rolled back");
+        }
         if (_reversed)
         {
             throw new InvalidOperationException("Transaction has already been rolled back");
