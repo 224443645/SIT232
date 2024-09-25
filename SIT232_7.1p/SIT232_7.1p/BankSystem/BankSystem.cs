@@ -1,7 +1,4 @@
-﻿// added an AccountsCount property to the bank class to enable input validation
-// without having to parse the std output or something silly
-// 
-enum MenuOption
+﻿enum MenuOption
 {
     Withdraw,
     Deposit,
