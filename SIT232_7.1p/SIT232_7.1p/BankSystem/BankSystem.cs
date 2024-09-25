@@ -279,7 +279,15 @@ class BankSystem
             transaction = bank.GetTransaction(value - 1);
         } while (value <= 0 || transaction == null);
 
-        transaction.Rollback();
+        try
+        {
+            transaction.Rollback();
+        }
+        catch (InvalidOperationException ex)
+        {
+            Console.WriteLine(ex.Message);
+            return;
+        }
         Console.WriteLine("Transaction was rolled back");
     }
 }

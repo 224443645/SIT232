@@ -6,7 +6,9 @@ class TransferTransaction : Transaction
     private WithdrawTransaction _withdraw;
     private bool _executed;
     private bool _reversed;
+    private DateTime _dateStamp;
 
+    public new DateTime DateStamp { get => _dateStamp; }
     public new bool Success { get => _deposit.Success && _withdraw.Success; }
     public bool Reversed { get => _reversed; }
 
@@ -27,7 +29,7 @@ class TransferTransaction : Transaction
 
     public override void Execute()
     {
-        base.Execute();
+        _dateStamp = DateTime.Now;
         if (_executed)
         {
             throw new InvalidOperationException("Transfer has already occured");
@@ -41,7 +43,7 @@ class TransferTransaction : Transaction
 
     public override void Rollback()
     {
-        base.Rollback();
+        _dateStamp = DateTime.Now;
         if (!_executed)
         {
             throw new InvalidOperationException("Transaction has not been executed");

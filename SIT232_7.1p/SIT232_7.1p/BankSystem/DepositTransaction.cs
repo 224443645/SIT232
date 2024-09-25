@@ -3,8 +3,10 @@ class DepositTransaction : Transaction
     private Account _account;
     private bool _executed;
     private bool _reversed;
+    private DateTime _dateStamp;
 
     public bool Reversed { get => _reversed; }
+    public new DateTime DateStamp { get => _dateStamp; }
 
     public DepositTransaction(Account account, decimal amount) : base(amount)
     {
@@ -19,7 +21,7 @@ class DepositTransaction : Transaction
 
     public override void Execute()
     {
-        base.Execute();
+        _dateStamp = DateTime.Now; ;
         if (_executed)
         {
             throw new InvalidOperationException("Deposit, has already been made");
@@ -38,12 +40,13 @@ class DepositTransaction : Transaction
 
     public override void Rollback()
     {
-        base.Rollback();
+        _dateStamp = DateTime.Now;
         if (!_executed)
         {
             throw new InvalidOperationException("Withdrawl must have occured before rolling back");
         }
-        if (!_success) {
+        if (!_success)
+        {
             throw new InvalidOperationException("Failed Transactions cannot be rolled back");
         }
         if (_reversed)

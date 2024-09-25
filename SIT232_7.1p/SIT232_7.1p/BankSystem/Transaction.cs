@@ -23,11 +23,11 @@ abstract class Transaction
 
     public virtual void Execute()
     {
-        _dateStamp = DateTime.Now;
+
     }
 
     public virtual void Rollback()
     {
-        _dateStamp = DateTime.Now;
+        
     }
 }
